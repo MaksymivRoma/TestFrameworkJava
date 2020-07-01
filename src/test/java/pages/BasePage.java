@@ -1,9 +1,9 @@
-package Pages;
+package pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public abstract class  BasePage {
 
@@ -15,5 +15,7 @@ public abstract class  BasePage {
 
 	public void assertTitle(){
 		$("title").should(Condition.exactText(pageTitle()));
+		open();
 	}
+
 }
