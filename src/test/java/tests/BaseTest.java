@@ -7,7 +7,7 @@ public abstract class BaseTest {
 
 	@BeforeAll
 	public static void baseTestBeforeClass() {
-		Configurations.configureBrowser();
+		/*Configurations.configureBrowser();*/
 	}
 
 
